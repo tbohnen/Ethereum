@@ -53,6 +53,10 @@ path: /usr/local/bin/solc
 ["Solidity"]
 ```
 
+Known issues: 
+
+* After installing geth and solidity on an Ubuntu 16.04 docker node, I received the following error: panic: runtime error: integer divide by zero. No answer as yet to how to fix it but the assumption is that I need to create a genesis block.
+
 ## Starting an Ethereum node (Non Docker based) ##
 
 These steps will outline getting an Ethereum node up and running with a bunch of defaults. The helper scripts will place all blockchain data in Blockchain/data and use a genesis block file Blockchain/genesisBlock.js. Open the helper scripts and genesisBlock.js in a text editor and have a look to see what they do.
